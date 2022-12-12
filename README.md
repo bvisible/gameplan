@@ -79,11 +79,10 @@ Currently, this app depends on the `develop` branch of [frappe](https://github.c
 1. In the frappe-bench directory, run `bench start` and keep it running. Open a new terminal session and cd into `frappe-bench` directory.
 1. Run the following commands:
     ```sh
-    bench new-site gameplan.test
-    bench get-app gameplan
-    bench --site gameplan.test install-app gameplan
-    bench --site gameplan.test add-to-hosts
-    bench --site gameplan.test browse --user Administrator
+    bench get-app https://github.com/bvisible/gameplan.git
+    bench --site prod.local install-app gameplan
+    bench --site prod.local add-to-hosts
+    bench --site prod.local browse --user Administrator
     ```
  1. Now, open a new terminal session and cd into `frappe-bench/apps/gameplan`, and run the following commands:
     ```
